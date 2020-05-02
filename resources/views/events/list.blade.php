@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Events Listing')
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" style="display:inline-block;">
         @if(session('success'))
             <div class="alert alert-success">
                 {{session('success')}}

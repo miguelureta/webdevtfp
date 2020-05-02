@@ -26,3 +26,7 @@ Route::get('/events/edit/{EventsID}', 'EventController@edit')->name('event_edit'
 Route::post('/events/edit/{EventsID}', 'EventController@update')->name('event_update');
 
 Route::delete('/events/delete/{EventsID}', 'EventController@delete')->name('event_delete');
+
+Route::get('/gallery/view', 'ImageController@index');
+
+Route::post('/gallery/view', 'ImageController@store')->name('upload');
